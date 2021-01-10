@@ -1,0 +1,18 @@
+[1mdiff --git a/js.html b/js.html[m
+[1mindex a88b239..24992fd 100644[m
+[1m--- a/js.html[m
+[1m+++ b/js.html[m
+[36m@@ -23,7 +23,12 @@[m
+ 	<script type="text/javascript">[m
+ 		[m
+ 		alert('HELLO WORLD!');[m
+[31m-		[m
+[32m+[m		[32m//observations- it doesnt display the body page when script loads first[m
+[32m+[m					[32m//	2. it loads the internal first before inline.[m
+[32m+[m					[32m//	3. internal loads before onload then onload loads before alert.[m
+[32m+[m					[32m//  4. alert loads first on this document when its on the script tag[m
+[32m+[m					[32m// or when its typed first in internal, as the code is interpreted, line by line as they appear.[m
+[32m+[m					[32m//	also onload keeps the tab loading until user clicks okay.[m[41m  [m
+ 	</script> [m
+ </body>[m
+ [m

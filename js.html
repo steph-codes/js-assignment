@@ -23,7 +23,12 @@
 	<script type="text/javascript">
 		
 		alert('HELLO WORLD!');
-		
+		//observations- it doesnt display the body page when script loads first
+					//	2. it loads the internal first before inline.
+					//	3. internal loads before onload then onload loads before alert.
+					//  4. alert loads first on this document when its on the script tag
+					// or when its typed first in internal, as the code is interpreted, line by line as they appear.
+					//	also onload keeps the tab loading until user clicks okay.  
 	</script> 
 </body>
 
